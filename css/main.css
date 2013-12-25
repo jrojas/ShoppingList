@@ -2,6 +2,9 @@
 @import url("reset.css");
 
 
+body
+
+{
  
     
     background-color:#DED7C8;
@@ -10,8 +13,9 @@
 
 }
 
-ul{
-margin-bottom: 20px;
+ul
+{
+    margin-bottom: 20px;
 
 }
 
@@ -21,7 +25,9 @@ text-decoration: underline;
 
 }*/
 
-h1 {
+h1 
+
+{
 
     text-align:center;
     font-size: 36px;
@@ -30,28 +36,30 @@ h1 {
 
 }
 
-h3{
-
-padding: 10px 10px 10px 10px ;
-font-size: 18px;
-font-weight:bold;
-line-height:18px;
-
-
-
+h3
+{
+    padding: 5px 5px 5px 0px;
+    font-size: 18px;
+    font-weight:bold;
+    line-height:18px;
 }
 
 
 
-header{
+header
+
+{
 
     margin-bottom:46px;
 
 }
-#logo{
+
+
+#logo
+
+{
 
     background:url(../img/logo.gif) no-repeat;
-   
     float: left;
 	width: 76px;
 	height:79px;
@@ -61,47 +69,58 @@ header{
 }
 
 
-.container{
+.container
+
+{
 
 	width:960px;
 	margin: 0 auto;
 
 }
 
-.form-sheet{
+.form-sheet
+
+{
     margin-bottom:20px;
   
 }
 
-.form-control{
+.form-control
+
+{
     width:98%;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
 
 }
 
-section{
+section
+
+{
     background-color:#ffffff;
     box-shadow: 1px 1px 5px #888888;
-    padding: 10px 10px 10px 10px ;
-    border-radius:5px;
+    padding: 5px 5px 5px 5px ;
+    border-radius:4px;
 
 }
 
-
-.completedItem{
+.completedItem
+{
  
     font-size: 11px;
-    line-height: 14px;
+    line-height: 11px;
     color: #999;
     text-decoration:line-through;
 
 }
-.listItem{
-font-size: 15px;
-line-height: 18px;
-color:#000000;
+
+.listItem
+{
+    font-size: 14px;
+    line-height: 14px;
+    /*color:#000000;*/
+    color: #999;
     
 }
