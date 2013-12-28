@@ -5,52 +5,59 @@ var groceryList = (function() {
     
    
     
-            var createData = $('.listItem'),
-                deleteData = $('.completedItem')
-               
+    var create = $('.btnAdd'),
+        //update = $('#update'),
+      // remove = $('#delete'),
+        createData = $('.createData')
+       // updateData = $('.updateData'),
+      //  updateData = $('.updateData')
     
 
     
     var init = function(){
-        createList();
-        updateList();
-        deleteList();
-       
+       createItem();
+        
     };
  
-    var createList = function() {
+    
+    var createItem = function() {
         
-        
-            createData.html('Created list item');
-           
-                
-      
+        $('form').submit(function () 
+        {
+            
+                    if ($('.inputList').val() !== '')
+                    {
+                        var inputvalue = $('.inputList').val();
+                        console.log('Created list item');
+                       
+                        $('.createData').append('<li><input type="checkbox">' + inputvalue + '</li>');
+                       
+            
+                    };
+                $('.inputList').val('');
+                return false;
+            });
+       
         
     };
- 
-    var updateList = function() {
+    
+    
+    var updateList = function() {
        
        
-        
-            createData.html('Updated list item');
-                
-      
-        
+     
         
     };
     
     var deleteList = function(){
        
-        
-            deleteData.html('Deleted list item');
-                
-     
-    
+       
     };
  
     // public API
     return {
-        init: init
+        init: init,
+        
        
         
     };
@@ -58,8 +65,6 @@ var groceryList = (function() {
 })();
 
 
-$(document).ready(function(){
-    groceryList.init();
-    console.log(groceryList.init);
 
-});
+
+ 

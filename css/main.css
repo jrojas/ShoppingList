@@ -70,16 +70,26 @@ header{
 }
 
 .form-sheet{
-    margin-bottom:20px;
+    margin-bottom:48px;
   
 }
 
-.form-control{
-    width:98%;
+.inputList{
+    width:93%;
+    display:block;
+    float:left;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
     padding: 10px 10px 10px 10px;
+
+}
+
+.btnAdd{
+width:4%;
+display:block;
+float:right;
+padding: 10px 10px 10px 10px;
 
 }
 
@@ -100,7 +110,9 @@ section{
     text-decoration:line-through;
 
 }
-.listItem{
+
+.createData li
+{
 font-size: 15px;
 line-height: 18px;
 color:#000000;
