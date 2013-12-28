@@ -8,7 +8,13 @@
 <script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script>
+$(document).ready(function(){
+    groceryList.init();
+    console.log(groceryList.init);
+});
 
+</script>
 </head>
 
 <body>
@@ -21,21 +27,21 @@
 <section>
 <form class="form-sheet">
       
-    <input type="text" class="form-control" id="inputList" placeholder="Add Shopping List item">
-  
+<input type="text"  class="inputList" placeholder="Add Shopping List item"><button class="btnAdd">+</button>
+
 </form>
  <h3>Current lists</h3>
-<ul class="#create">
+<ul class="createData">
    
 <li>
-    <form><input type ="checkbox"><span class="listItem">New Entry</span></form>
+    
 </li>
 </ul>
 <h3>Completed lists</h3>
-<ul class="#delete">
+<ul class="delete">
      
     <li>
-    <form><input type ="checkbox" checked><span class="completedItem">Completed Item</span></form>
+    <span class="completedItem">Completed Item</span>
     </li>
 </ul>
 </section>
