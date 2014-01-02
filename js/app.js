@@ -1,17 +1,9 @@
-var groceryList = (function() {
+var shoppingList = (function() {
  
-    // private variables and functions
-    
-    
-   
-    
-    var create = $('.btnAdd'),
-        //update = $('#update'),
-      // remove = $('#delete'),
-        createData = $('.createData')
-       // updateData = $('.updateData'),
-      //  updateData = $('.updateData')
-    
+    // private variables for functions
+    var liOpen = '<li><input type="checkbox">',
+        liClose = '</li>'
+       
 
     
     var init = function(){
@@ -21,21 +13,19 @@ var groceryList = (function() {
  
     
     var createItem = function() {
-        
-        $('form').submit(function () 
-        {
-            
-                    if ($('.inputList').val() !== '')
+        var  createData = $('.createData').sortable(),
+             form =  $('form')
+        
+        form.submit(function () 
+           {
+                    var inputList = $('.inputList');
+                    if (inputList.val() !== '')
                     {
-                        var inputvalue = $('.inputList').val();
-                        console.log('Created list item');
-                       
-                        $('.createData').append('<li><input type="checkbox">' + inputvalue + '</li>');
-                       
-            
+                        var inputvalue = inputList.val();
+                        createData.append( liOpen + inputvalue + liClose);
                     };
-                $('.inputList').val('');
-                return false;
+                inputList.val('');
+               return false;
             });
        
         
