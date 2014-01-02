@@ -34,13 +34,13 @@ var shoppingList = (function() {
     
     var updateList = function() {
        
-       
+       //allow list to be editable
      
         
     };
     
     var deleteList = function(){
-       
+        //allow list to be deleted
        
     };
  
