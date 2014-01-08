@@ -8,17 +8,29 @@ body{
     color:#444444;
 
 }
+ol li{
+    list-style-type:decimal;
+    padding: 10px 10px 10px 10px;
+    margin-left:40px;
+        
 
+}
 ul{
-margin-bottom: 20px;
+margin-bottom: 40px;
 
 }
 
-/*add hover css to list items{
-color: #1c5c76;
-text-decoration: underline;
+li{
+    margin-bottom: 20px;
+    
+    
+}
 
-}*/
+li:hover{
+    color: #1c5c76;
+text-decoration: underline;
+}
+
 
 h1 {
 
@@ -100,10 +112,10 @@ section{
 }
 
 
-.completedItem{
+.check{
  
     font-size: 11px;
-    line-height: 14px;
+    line-height: 11px;
     color: #999;
     text-decoration:line-through;
 
@@ -113,6 +125,16 @@ section{
 {
 font-size: 15px;
 line-height: 18px;
-color:#000000;
+
     
 }
+.trash{
+    
+   
+   background-image:url(../img/trash.gif);
+    width:10px;
+    height:11px;
+    border: none;
+
+}
+
