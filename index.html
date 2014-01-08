@@ -9,10 +9,24 @@
 <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script>
-$(document).ready(function(){
+$(document).ready(function()
+{
     shoppingList.init();
     console.log(shoppingList.init);
+     
+    
+    
+    
+   
+      
+     
 });
+       
+
+    
+    
+ 
+
 
 </script>
 </head>
@@ -31,19 +45,17 @@ $(document).ready(function(){
 
 </form>
  <h3>Current Items</h3>
-<ul class="createData">
-   
-<li>
     
-</li>
-</ul>
+<ol class="createData">
+   <li class="help" title="Click to Complete">To add a shopping list item typeinto textbox and click the + button or press the enter key&nbsp;<img src="" class="trash"></li>
+
+</ol>
 <h3>Completed Items</h3>
-<ul class="delete">
-     
-    <li>
-    <span class="completedItem">Completed Item</span>
-    </li>
-</ul>
+<ol class="completedData">
+   
+
+</ol>
+
 </section>
 
 </div>

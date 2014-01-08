@@ -1,13 +1,18 @@
 var shoppingList = (function() {
  
     // private variables for functions
-    var liOpen = '<li><input type="checkbox">',
-        liClose = '</li>'
+    var liOpen = '<li>',
+        liClose = '<img src="" class="trash"></li>'
+        
        
 
     
     var init = function(){
        createItem();
+       deleteItem();
+       completeItem(); 
+      
+       
         
     };
  
@@ -15,6 +20,7 @@ var shoppingList = (function() {
     var createItem = function() {
         var  createData = $('.createData').sortable(),
              form =  $('form')
+     
         
         form.submit(function () 
            {
@@ -22,25 +28,56 @@ var shoppingList = (function() {
                     if (inputList.val() !== '')
                     {
                         var inputvalue = inputList.val();
-                        createData.append( liOpen + inputvalue + liClose);
+                        createData.append(liOpen + inputvalue + ' ' + liClose);
                     };
                 inputList.val('');
                return false;
             });
+        
+        
        
         
     };
     
-    
-    var updateList = function() {
+    var completeItem = function() {
+       
+       //strike out completed item
+         $(document).on('click','.createData li', function (d) {
+            d.preventDefault();
+            $(this).toggleClass("check");
+            $(this).appendTo('.completedData');
+     
+            });
+        
+        
+       
+     
+
+
+        
+    };
+    var updateItem = function() {
        
        //allow list to be editable
      
         
     };
+    
+    var help = function(){
+    
+        $(".help").tooltip();
+    };
+    
+    
     
-    var deleteList = function(){
-        //allow list to be deleted
+    var deleteItem = function(){
+        //allow listitem to be deleted
+        
+        $(document).on('click', '.trash' , function (d) {
+            d.preventDefault();
+            $(this).parent().remove();
+
+            });
        
     };
  
