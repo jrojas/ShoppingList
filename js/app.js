@@ -4,15 +4,12 @@ var shoppingList = (function() {
     var liOpen = '<li>',
         liClose = '<img src="" class="trash"></li>'
         
-       
-
-    
+ 
     var init = function(){
        createItem();
        deleteItem();
        completeItem(); 
-      
-       
+
         
     };
  
