@@ -1,10 +1,11 @@
 var shoppingList = (function() {
  
-    // private variables for functions
+    // public variables for shoppping list Class
     var liOpen = '<li>',
-        liClose = '<img src="" class="trash"></li>'
+        liClose = '<img src="../img/trash.png"  class="trash"></li>'
+    
         
- 
+    // public init method to be exposed to the document ready function 
     var init = function(){
        createItem();
        deleteItem();
@@ -13,7 +14,7 @@ var shoppingList = (function() {
         
     };
  
-    
+    // Created Item
     var createItem = function() {
         var  createData = $('.createData').sortable(),
              form =  $('form')
@@ -22,7 +23,7 @@ var shoppingList = (function() {
         form.submit(function () 
            {
                     var inputList = $('.inputList');
-                    if (inputList.val() !== '')
+                    if ($.trim(inputList.val()) !== '')
                     {
                         var inputvalue = inputList.val();
                         createData.append(liOpen + inputvalue + ' ' + liClose);
@@ -36,6 +37,7 @@ var shoppingList = (function() {
         
     };
     
+    //Complete Item
     var completeItem = function() {
        
        //strike out completed item
@@ -53,6 +55,8 @@ var shoppingList = (function() {
 
         
     };
+    
+      //TODO: Update Item
     var updateItem = function() {
        
        //allow list to be editable
@@ -60,13 +64,9 @@ var shoppingList = (function() {
         
     };
     
-    var help = function(){
-    
-        $(".help").tooltip();
-    };
     
     
-    
+    //Delete Item
     var deleteItem = function(){
         //allow listitem to be deleted
         

@@ -8,6 +8,11 @@ body{
     color:#444444;
 
 }
+
+a{
+    outline: none;
+
+}
 ol li{
     list-style-type:decimal;
     padding: 10px 10px 10px 10px;
@@ -26,7 +31,7 @@ li{
     
 }
 
-li:hover{
+.createData li:hover{
     color: #1c5c76;
 text-decoration: underline;
 }
@@ -96,10 +101,21 @@ header{
 }
 
 .btnAdd{
-width:4%;
+
 display:block;
 float:right;
+
+    
+  
+display: block;
+width: 4%;
+color: #fff;
+
+background: #444444;;
+border-radius: 3px;
 padding: 10px 10px 10px 10px;
+font-weight: 500;
+border: none;
 
 }
 
@@ -131,10 +147,13 @@ line-height: 18px;
 .trash{
     
    
-   background-image:url(../img/trash.gif);
-    width:10px;
-    height:11px;
-    border: none;
+   
+    background:url(../img/trash.png) no-repeat;
+    width:16px;
+    height:16px;
+    border:0;
+    
+    
 
 }
 
