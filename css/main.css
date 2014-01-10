@@ -2,11 +2,15 @@
 @import url("reset.css");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 body
 
 {
  
+=======
+body{
+>>>>>>> gh-pages
 =======
 body{
 >>>>>>> gh-pages
@@ -18,10 +22,13 @@ body{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ul
 {
     margin-bottom: 20px;
 =======
+=======
+>>>>>>> gh-pages
 a{
     outline: none;
 
@@ -35,6 +42,8 @@ ol li{
 }
 ul{
 margin-bottom: 40px;
+<<<<<<< HEAD
+=======
 
 }
 >>>>>>> gh-pages
@@ -44,14 +53,28 @@ li{
     
     
 }
+>>>>>>> gh-pages
 
+<<<<<<< HEAD
+li{
+    margin-bottom: 20px;
+    
+    
+}
+
+=======
+>>>>>>> gh-pages
 .createData li:hover{
     color: #1c5c76;
 text-decoration: underline;
 }
+<<<<<<< HEAD
 
 
 h1 
+=======
+
+>>>>>>> gh-pages
 
 {
 
@@ -105,6 +128,7 @@ header
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .form-sheet
 
 {
@@ -122,10 +146,20 @@ header
   
 }
 
+=======
+.form-sheet{
+    margin-bottom:48px;
+  
+}
+
+>>>>>>> gh-pages
 .inputList{
     width:93%;
     display:block;
     float:left;
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
     border-top: 0px;
     border-right: 0px;
@@ -139,6 +173,25 @@ section
 
 {
 =======
+.btnAdd{
+
+display:block;
+float:right;
+
+    
+  
+display: block;
+width: 4%;
+color: #fff;
+
+background: #444444;;
+border-radius: 3px;
+padding: 10px 10px 10px 10px;
+font-weight: 500;
+border: none;
+
+}
+
 .btnAdd{
 
 display:block;
@@ -173,6 +226,9 @@ section{
 =======
 
 .check{
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
  
     font-size: 11px;
@@ -183,6 +239,7 @@ section{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .listItem
 {
     font-size: 14px;
@@ -192,6 +249,8 @@ section{
     
 }
 =======
+=======
+>>>>>>> gh-pages
 .createData li
 {
 font-size: 15px;
@@ -203,7 +262,11 @@ line-height: 18px;
     
    
    
+<<<<<<< HEAD
     background:url(../img/trash.png) no-repeat;
+=======
+    
+>>>>>>> gh-pages
     width:16px;
     height:16px;
     border:0;
@@ -212,4 +275,7 @@ line-height: 18px;
 
 }
 
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
