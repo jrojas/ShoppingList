@@ -2,7 +2,7 @@ var shoppingList = (function() {
  
     // public variables for shoppping list Class
     var liOpen = '<li>',
-        liClose = '<img src="../img/trash.png"  class="trash"></li>'
+        liClose = '<img src="img/trash.png"  class="trash"></li>'
     
         
     // public init method to be exposed to the document ready function 
