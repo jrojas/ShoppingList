@@ -8,7 +8,22 @@
 <script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script>
+$(document).ready(function()
+{
+    shoppingList.init();
+    console.log(shoppingList.init);
 
+     
+});
+       
+
+    
+    
+ 
+
+
+</script>
 </head>
 
 <body>
@@ -21,23 +36,23 @@
 <section>
 <form class="form-sheet">
       
-    <input type="text" class="form-control" id="inputList" placeholder="Add Shopping List item">
-  
+<input type="text"  class="inputList" placeholder="Add Shopping List item"><button class="btnAdd">+</button>
+
 </form>
- <h3>Current lists</h3>
-<ul class="#create">
+ <h3>Current Items</h3>
+    
+<ol class="createData">
+   <li>To add a shopping list item type into textbox and click the + button or press the enter key&nbsp;<img src="../img/trash.png" class="trash"></li>
+    <li>To delete a shopping list item   click the trash icon &nbsp;<img src="../img/trash.png" class="trash"></li>
+    <li>To sort/order a shopping list item   click and drag up or drag down &nbsp;<img src="../img/trash.png" class="trash"></li>
+
+</ol>
+<h3>Completed Items</h3>
+<ol class="completedData">
    
-<li>
-    <form><input type ="checkbox"><span class="listItem">New Entry</span></form>
-</li>
-</ul>
-<h3>Completed lists</h3>
-<ul class="#delete">
-     
-    <li>
-    <form><input type ="checkbox" checked><span class="completedItem">Completed Item</span></form>
-    </li>
-</ul>
+
+</ol>
+
 </section>
 
 </div>

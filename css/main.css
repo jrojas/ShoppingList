@@ -1,9 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Belgrano);
 @import url("reset.css");
 
+<<<<<<< HEAD
 
-body{
+body
+
+{
  
+=======
+body{
+>>>>>>> gh-pages
     
     background-color:#DED7C8;
     font-family: 'Belgrano', serif;
@@ -11,18 +17,43 @@ body{
 
 }
 
-ul{
-margin-bottom: 20px;
+<<<<<<< HEAD
+ul
+{
+    margin-bottom: 20px;
+=======
+a{
+    outline: none;
 
 }
+ol li{
+    list-style-type:decimal;
+    padding: 10px 10px 10px 10px;
+    margin-left:40px;
+        
 
-/*add hover css to list items{
-color: #1c5c76;
+}
+ul{
+margin-bottom: 40px;
+
+}
+>>>>>>> gh-pages
+
+li{
+    margin-bottom: 20px;
+    
+    
+}
+
+.createData li:hover{
+    color: #1c5c76;
 text-decoration: underline;
+}
 
-}*/
 
-h1 {
+h1 
+
+{
 
     text-align:center;
     font-size: 36px;
@@ -31,28 +62,30 @@ h1 {
 
 }
 
-h3{
-
-padding: 10px 10px 10px 10px ;
-font-size: 18px;
-font-weight:bold;
-line-height:18px;
-
-
-
+h3
+{
+    padding: 5px 5px 5px 0px;
+    font-size: 18px;
+    font-weight:bold;
+    line-height:18px;
 }
 
 
 
-header{
+header
+
+{
 
     margin-bottom:46px;
 
 }
-#logo{
+
+
+#logo
+
+{
 
     background:url(../img/logo.gif) no-repeat;
-   
     float: left;
 	width: 76px;
 	height:79px;
@@ -62,47 +95,121 @@ header{
 }
 
 
-.container{
+.container
+
+{
 
 	width:960px;
 	margin: 0 auto;
 
 }
 
-.form-sheet{
+<<<<<<< HEAD
+.form-sheet
+
+{
     margin-bottom:20px;
   
 }
 
-.form-control{
+.form-control
+
+{
     width:98%;
+=======
+.form-sheet{
+    margin-bottom:48px;
+  
+}
+
+.inputList{
+    width:93%;
+    display:block;
+    float:left;
+>>>>>>> gh-pages
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+<<<<<<< HEAD
+section
+
+{
+=======
+.btnAdd{
+
+display:block;
+float:right;
+
+    
+  
+display: block;
+width: 4%;
+color: #fff;
+
+background: #444444;;
+border-radius: 3px;
+padding: 10px 10px 10px 10px;
+font-weight: 500;
+border: none;
 
 }
 
 section{
+>>>>>>> gh-pages
     background-color:#ffffff;
     box-shadow: 1px 1px 5px #888888;
-    padding: 10px 10px 10px 10px ;
-    border-radius:5px;
+    padding: 5px 5px 5px 5px ;
+    border-radius:4px;
 
 }
 
+<<<<<<< HEAD
+.completedItem
+{
+=======
 
-.completedItem{
+.check{
+>>>>>>> gh-pages
  
     font-size: 11px;
-    line-height: 14px;
+    line-height: 11px;
     color: #999;
     text-decoration:line-through;
 
 }
-.listItem{
-font-size: 15px;
-line-height: 18px;
-color:#000000;
+
+<<<<<<< HEAD
+.listItem
+{
+    font-size: 14px;
+    line-height: 14px;
+    /*color:#000000;*/
+    color: #999;
     
 }
+=======
+.createData li
+{
+font-size: 15px;
+line-height: 18px;
+
+    
+}
+.trash{
+    
+   
+   
+    background:url(../img/trash.png) no-repeat;
+    width:16px;
+    height:16px;
+    border:0;
+    
+    
+
+}
+
+>>>>>>> gh-pages

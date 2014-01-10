@@ -1,56 +1,87 @@
-var groceryList = (function() {
+var shoppingList = (function() {
  
-    // private variables and functions
-    
-    
-   
-    
-            var createData = $('.listItem'),
-                deleteData = $('.completedItem')
-               
-    
-
-    
+    // public variables for shoppping list Class
+    var liOpen = '<li>',
+        liClose = '<img src="../img/trash.png"  class="trash"></li>'
+    
+        
+    // public init method to be exposed to the document ready function 
     var init = function(){
-        createList();
-        updateList();
-        deleteList();
+       createItem();
+       deleteItem();
+       completeItem(); 
+
+        
+    };
+ 
+    // Created Item
+    var createItem = function() {
+        var  createData = $('.createData').sortable(),
+             form =  $('form')
+     
+        
+        form.submit(function () 
+           {
+                    var inputList = $('.inputList');
+                    if ($.trim(inputList.val()) !== '')
+                    {
+                        var inputvalue = inputList.val();
+                        createData.append(liOpen + inputvalue + ' ' + liClose);
+                    };
+                inputList.val('');
+               return false;
+            });
+        
+        
+       
+        
+    };
+    
+    //Complete Item
+    var completeItem = function() {
+       
+       //strike out completed item
+         $(document).on('click','.createData li', function (d) {
+            d.preventDefault();
+            $(this).toggleClass("check");
+            $(this).appendTo('.completedData');
+     
+            });
+        
+        
        
-    };
- 
-    var createList = function() {
-        
-        
-            createData.html('Created list item');
-           
-                
-      
+     
+
+
         
     };
- 
-    var updateList = function() {
+    
+      //TODO: Update Item
+    var updateItem = function() {
        
-       
-        
-            createData.html('Updated list item');
-                
-      
-        
-        
-    };
-    
-    var deleteList = function(){
-       
-        
-            deleteData.html('Deleted list item');
-                
+       //allow list to be editable
      
-    
+        
+    };
+    
+    
+    
+    //Delete Item
+    var deleteItem = function(){
+        //allow listitem to be deleted
+        
+        $(document).on('click', '.trash' , function (d) {
+            d.preventDefault();
+            $(this).parent().remove();
+
+            });
+       
     };
  
     // public API
     return {
-        init: init
+        init: init,
+        
        
         
     };
@@ -58,8 +89,6 @@ var groceryList = (function() {
 })();
 
 
-$(document).ready(function(){
-    groceryList.init();
-    console.log(groceryList.init);
 
-});
+
+ 
