@@ -33,10 +33,14 @@ li{
 
 .createData li:hover{
     color: #1c5c76;
-text-decoration: underline;
+    text-decoration: underline;
     cursor:pointer;
 }
+.completedData li:hover{
+    cursor:pointer;
 
+
+}
 
 h1 {
 
@@ -98,6 +102,7 @@ header{
     border-right: 0px;
     border-left: 0px;
     padding: 10px 10px 10px 10px;
+    margin-bottom:10px;
 
 }
 
@@ -105,7 +110,6 @@ header{
 
 display:block;
 float:right;
-display: block;
 width: 4%;
 color: #fff;
 background: #444444;;
@@ -116,6 +120,23 @@ font-weight: 500;
 border: none;
 
 }
+
+.btnClear {
+    
+
+color: #fff;
+background: #444444;;
+border-radius: 3px;
+padding: 3px 3px 3px 3px;
+font-size:8px;
+font-weight: bold;
+border-style:none;
+margin-left:50px;
+
+    
+
+}
+
 
 section{
     background-color:#ffffff;
@@ -150,6 +171,7 @@ line-height: 18px;
     width:16px;
     height:16px;
     border:0;
+    
     
     
 
