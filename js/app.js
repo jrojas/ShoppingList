@@ -14,7 +14,7 @@ var shoppingList = (function() {
        removeCompletedItems();
        sortLi();
        completeItemReset();
-       toolTip();
+      
         
   
     };
@@ -29,10 +29,7 @@ var shoppingList = (function() {
     };
     
     
-    var toolTip = function(){
-        
-        $('.btnAdd').tooltip();
-    };
+    
     
     
     
