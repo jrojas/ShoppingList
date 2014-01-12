@@ -66,8 +66,10 @@ li{
 >>>>>>> gh-pages
 .createData li:hover{
     color: #1c5c76;
-text-decoration: underline;
+    text-decoration: underline;
+    cursor:pointer;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -77,6 +79,15 @@ h1
 >>>>>>> gh-pages
 
 {
+=======
+.completedData li:hover{
+    cursor:pointer;
+
+
+}
+
+h1 {
+>>>>>>> gh-pages
 
     text-align:center;
     font-size: 36px;
@@ -164,6 +175,7 @@ header
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
+<<<<<<< HEAD
     padding: 5px 5px 5px 5px;
 
 }
@@ -189,6 +201,10 @@ border-radius: 3px;
 padding: 10px 10px 10px 10px;
 font-weight: 500;
 border: none;
+=======
+    padding: 10px 10px 10px 10px;
+    margin-bottom:10px;
+>>>>>>> gh-pages
 
 }
 
@@ -196,7 +212,6 @@ border: none;
 
 display:block;
 float:right;
-display: block;
 width: 4%;
 color: #fff;
 background: #444444;;
@@ -207,6 +222,23 @@ font-weight: 500;
 border: none;
 
 }
+
+.btnClear {
+    
+
+color: #fff;
+background: #444444;;
+border-radius: 3px;
+padding: 3px 3px 3px 3px;
+font-size:8px;
+font-weight: bold;
+border-style:none;
+margin-left:50px;
+
+    
+
+}
+
 
 section{
 >>>>>>> gh-pages
@@ -267,6 +299,7 @@ line-height: 18px;
     width:16px;
     height:16px;
     border:0;
+    
     
     
 
